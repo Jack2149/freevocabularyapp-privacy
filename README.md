@@ -7,6 +7,12 @@ Thank you for using Free Vocabulary App ("the App", "we", "us", "our")! This Pri
 ## 1. Information We Collect
 
 *   **User-Provided Vocabulary Files (CSV):** The core functionality of the App involves you selecting Comma Separated Value (.csv) files from your device's storage using the Android Storage Access Framework. These files contain the vocabulary lists you wish to create, manage, and train with. The App reads data from these files and can save changes back to these files only at your explicit direction and chosen location on your device.
+
+* Camera Usage for Optical Character Recognition (OCR): The App requests camera permission for one specific purpose: to allow you to take a picture of text (e.g., from a book or a document) to be converted into a vocabulary list. This feature is initiated entirely by you.
+    
+    *   **On-Device Processing:** The image you capture is processed directly on your device by the Google ML Kit library to perform Optical Character Recognition (OCR).
+    *   **No Storage or Transmission:** The captured image is **not** stored on your device after the text has been recognized, and it is **never** transmitted, shared, or uploaded to us or any third-party servers. It is used momentarily for the OCR process and then immediately discarded.
+
 *   **Firebase Analytics:** We use Firebase Analytics to collect anonymous usage data to help us understand how the App is being used and to improve its functionality and user experience. This data may include:
     *   Device information (such as device model, operating system version)
     *   App usage patterns (such as features used, session duration)
